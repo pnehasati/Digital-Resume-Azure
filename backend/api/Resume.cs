@@ -20,7 +20,7 @@ namespace Company.Function
             [CosmosDB(databaseName:"Digital Resume", collectionName: "Counter", ConnectionStringSetting = "AzureResumeConnectionString", Id = "1", PartitionKey = "1")] out Counter updatedCounter,
             ILogger log)
         {
-            //Here we have counter
+            //Here I have added the counter below
             log.LogInformation("C# HTTP trigger function processed a request.");
             
             updatedCounter  = counter;
