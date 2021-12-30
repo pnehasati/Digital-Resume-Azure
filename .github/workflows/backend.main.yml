@@ -1,4 +1,4 @@
-name: Deploy backend
+name: deploy_backend
 
 on:
   push:
@@ -12,7 +12,7 @@ env:
   DOTNET_VERSION: '3.1'              # set this to the dotnet version to use
 
 jobs:
-  build-and-deploy:
+  deploy_backend:
     runs-on: windows-latest
     steps:
     - name: 'Checkout GitHub Action'
@@ -34,9 +34,9 @@ jobs:
         pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/api'
         dotnet build --configuration Release --output ./output
         popd
-    -name: 'Run unit test' 
-     shell: pwsh
-     run:  |    
+    - name: 'Run unit test' 
+      shell: pwsh
+      run:  |    
         pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/tests'
         dotnet test    
 
