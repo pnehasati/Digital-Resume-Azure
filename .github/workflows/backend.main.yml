@@ -1,4 +1,4 @@
-name: Deploy backend
+name: deploy_backend
 
 on:
   push:
@@ -12,7 +12,7 @@ env:
   DOTNET_VERSION: '3.1'              # set this to the dotnet version to use
 
 jobs:
-  build:
+  build-and-deploy:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: windows-latest
     steps:
