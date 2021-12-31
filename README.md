@@ -3,7 +3,7 @@
 Cloud Resume is a multiple-step resume project where the main idea revolves around creating an online version of your resume in Azure to get a hands-on practice of the cloud services; that you can use in job interviews as a way to build and discuss your cloud skills. This project is inspired by the Cloud Resume Challenge introduced started by Forrest Brazeal in April 2020. The outcome is to create a 100% Azure-hosted version of your resume and build skills with Azure.
 The aim is to build digital cloud resume which can be handy, avoids confusion and saves time. This can be also be easily shared on our social medias which opens up for different opportunities. 
 
-What have I built?
+##What have I built?
 
  The blob storage, holds my static website, my resume, and in that website, we're going to be using HTML, CSS and JavaScript. The JavaScript is going to be used to implement a visitor counter. Not only will it be used to display that information, but also to call an API, which we're going to implement with an Azure function. This Azure function is going to interact with Azure Cosmos DB, which is the database service we'll be using to store our visitor counter info. We're going to be using Azure CDN to enable features like HTTPS and custom domain support for our static site that is deployed on Azure blob storage. Finally, for all our CI/CD tooling, we're going to be using GitHub.
 
@@ -16,7 +16,7 @@ Azure Prerequisites:
 6)	 C# extension: Used for tools and support for programming in Cli.
 
 
-Section 1:  Building the Frontend
+##Section 1:  Building the Frontend
  
 1)	Setting up my version control: I created this GitHub Repository, cloned it on my machine. Cloning it on my machine makes it easy to update my changes on GitHub.
 2)	Build HTML and implement counter: On Visual Studio Code, I built the HTML code (attached in the frontend folder- index.html) for my resume and wrote the JavaScript code for the visitor counter (attached in the frontend folder- main.js).  
@@ -29,7 +29,7 @@ a)	git add -A
 b)	git commit -m “Update”
 c)	git push
 
-Section 2:  Building the Backend
+##Section 2:  Building the Backend
  
 1)	Setting up my Cosmos DB resources: Here first I created a resource group in which I created my Cosmos DB account. Inside the Cosmos DB account, I created a new database which consist of the container and the items. The container has the id and visitor’s counts (number of times, people visited my resume website)  
  
@@ -47,7 +47,9 @@ d)	Then, updated local.settings.json file with Primary Connection String in my A
 e)	 Added a #C class file to describe counter object. (attached in the backend folder ->api-> Counter.cs)
 f)	Updated Resume.cs function to connect the Counter.cs counter created. 
 3)	Test locally: Function gets enabled locally and also the counter data in the browser. Further in the main.js I updated the API URL with the functions local URL. Then, ran the function locally. Checked the index.html to make sure whether the counter data can actually be viewed. 
-Section 3: Deploying to Azure
+
+
+##Section 3: Deploying to Azure
  
 1)	Deploy my Azure Function: Here I deployed Azure Function to Azure, grabbed it’s URL and updated my JavaScript code with it.
  
@@ -67,7 +69,9 @@ After this is deployed, I again added this my domain URL in the CORS to enable t
 i)	Caching is the process of storing copies of files in a cache, or temporary storage location, so that they can be accessed more quickly.
 ii)	Purging is the process of removing cached content before the predetermined expiry date.
 iii)	Purge as part of my CI/CD is a good practice as visitors get most up-to-date assets.
- Section 4: Building CI/CD Pipeline
+ 
+ 
+ ##Section 4: Building CI/CD Pipeline
  
 CI/CD stands for continuous integration and continuous delivery. There are sort of four major areas here. So, Version Control, which in my case, I’m using git and GitHub to track and manage, changes to my code. Then there's Continuous Integration. So once my code is in, a version control, it'll go through a series of tests to validate the code. Then third is Continuous Delivery. Once it's passed those tests, it's placed in an area that it's ready to be pushed to production. Usually, people will have to manually go in and push the change to production. And the last optional step is the Continuous Deployment step, which once it reaches continuous delivery, it can automatically be pushed to production without anyone having to intervene and actually push a button there. 
 Before I started with this, I updated all my changes on GitHub by using the git commands.
@@ -93,6 +97,6 @@ After that, it can be seen in the actions tab on my GitHub that the frontend is 
 Then I wrote the code for the backend in workflows and updated it on my GitHub Repository. After that, it can be seen in the actions tab on my GitHub that the backend is deployed successfully (just as frontend). Whatever changes I would make at the backend later, would be updated directly in my backend files after this. (Right now, it is empty since I have not made any changes at the backend yet)
  
 
-Conclusion: 
+##Conclusion: 
 Thus, I successfully made my cloud resume using Azure. This helped me understand about the full-stack software development, version control, infrastructure as code, automation, continuous integration and delivery, cloud services and “serverless”, application security, and networking. Thank you.
 
