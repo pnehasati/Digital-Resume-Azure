@@ -129,9 +129,7 @@ This provided some JSON and I copied all of that and pasted it in my GitHub Repo
 2)	Implement unit testing: I tested my Azure Functions code as part of its deployment workflow. (tests files are attacked above inside the backend folder)
 
 
-3)	Create backend workflow: I created this so that it makes it easy to make changes at the backend in the future. GitHub workflow is responsible for deploying the frontend of my project. (above file- .github/workflows->backend.main.yml) 
-
-Then I wrote the code for the backend in workflows and updated it on my GitHub Repository. After that, it can be seen in the actions tab on my GitHub that the backend is deployed successfully (just as frontend). Whatever changes I would make at the backend later, would be updated directly in my backend files after this. (Right now, it is empty since I have not made any changes at the backend yet)
+3)	Create backend workflow: I created this so that it makes it easy to make changes at the backend in the future. GitHub workflow is responsible for deploying the frontend of my project. (above file- .github/workflows->backend.main.yml) Then I wrote the code for the backend in workflows and updated it on my GitHub Repository. After that, it can be seen in the actions tab on my GitHub that the backend is deployed successfully (just as frontend). Whatever changes I would make at the backend later, would be updated directly in my backend files after this. (Right now, it is empty since I have not made any changes at the backend yet)
 
 ![section4 3](https://user-images.githubusercontent.com/77928409/147826869-5ab3ed0b-55f1-40dd-bb06-08ea1c76d116.png)
 
