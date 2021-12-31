@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded', (event) =>{
 const functionApi = '';
 
 const getVisitCount = () => {
-    let count = 30 
+    let count = 100 
     fetch(functionApi).then(response => {
         return response.json()
     }).then(response => {
