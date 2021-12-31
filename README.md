@@ -89,9 +89,13 @@ Steps to create Azure Blob Storage in VS Code:
 ![section3 3](https://user-images.githubusercontent.com/77928409/147826732-c256dcc5-0e73-4486-a07a-14ddbe7eecfb.png)
 
 After this is deployed, I again added this my domain URL in the CORS to enable the visitor counter on the website.
-<p**Here I used the concept of caching and purging:**>
+
+**Here I used the concept of caching and purging:**
+
   i.	Caching is the process of storing copies of files in a cache, or temporary storage location, so that they can be accessed more quickly. 
+  
   ii.	Purging is the process of removing cached content before the predetermined expiry date. 
+  
   iii.	Purge as part of my CI/CD is a good practice as visitors get most up-to-date assets. 
  
  
@@ -101,6 +105,7 @@ After this is deployed, I again added this my domain URL in the CORS to enable t
  
 CI/CD stands for continuous integration and continuous delivery. There are sort of four major areas here. So, Version Control, which in my case, I’m using git and GitHub to track and manage, changes to my code. Then there's Continuous Integration. So once my code is in, a version control, it'll go through a series of tests to validate the code. Then third is Continuous Delivery. Once it's passed those tests, it's placed in an area that it's ready to be pushed to production. Usually, people will have to manually go in and push the change to production. And the last optional step is the Continuous Deployment step, which once it reaches continuous delivery, it can automatically be pushed to production without anyone having to intervene and actually push a button there. 
 Before I started with this, I updated all my changes on GitHub by using the git commands.
+
 1)	Create frontend workflow: I created this so that it makes it easy to make changes at the frontend in the future. GitHub workflow is responsible for deploying the frontend of my project. (above file- .github/workflows->frontend.main.yml) I created this ‘.github’ directory using Visual Studio Code. 
 I used commands as follows:
 -	mkdir .github
@@ -108,6 +113,7 @@ I used commands as follows:
 -	touch frontend.main.yml
 -	touch backend.main.yml
 Further, first thing I did is generated a secret, that I then saved it in my GitHub Repository. For that I used the Azure CLI. 
+
 I ran this command in it:
 - az ad sp create-for-rbac --name "Name" --role Contributor --scopes/subscriptions/{SubID}/resourceGroup/{ResourceGroup} –sdk -auth
 This provided some JSON and I copied all of that and pasted it in my GitHub Repository settings in Secrets option.
