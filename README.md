@@ -48,6 +48,7 @@ For updating the changes, I used commands as follows in Visual Studio (Git Bash 
  ![section2 2](https://user-images.githubusercontent.com/77928409/147826581-1dd41fe3-f8ed-4478-b13a-08613e692d7e.png)
 
 2)	Setting up my Azure Function:  I created Azure Functions inside of Visual Studio Code to interact with our Cosmos DB counter data. Functions has these things called bindings that allow us to connect other resources to our function. So, I connected the Azure Cosmos DB bindings to my newly created function, and then viewed my counter data via the function. (Function code is attached in the backend folder ->api-> Resume.cs)
+    
     Steps to create Azure Function in VS Code:
 -	Downloaded Azure Functions extension
 -	Create new project- chose ‘#C’ for language; ‘.NetCore6’ and HttpTrigger 
@@ -120,8 +121,8 @@ This provided some JSON and I copied all of that and pasted it in my GitHub Repo
  
  ![section4 1](https://user-images.githubusercontent.com/77928409/147826815-cf1a0a8c-0526-4750-9cc9-4f23e71e7382.png)
  
-Then I wrote the code for the frontend in workflows and updated it on my GitHub Repository. 
-After that, it can be seen in the actions tab on my GitHub that the frontend is deployed successfully. Whatever changes I would make at the frontend later, would be updated directly on my website after this.
+   Then I wrote the code for the frontend in workflows and updated it on my GitHub Repository. 
+   After that, it can be seen in the actions tab on my GitHub that the frontend is deployed successfully. Whatever changes I would make at the frontend later, would be updated      directly on my website after this.
   
  ![section4 2](https://user-images.githubusercontent.com/77928409/147826836-1593a85e-61e9-47ae-8551-379cfec6855b.png)
 
