@@ -1,4 +1,4 @@
-# Digital-Resume-Azure: by Sneha Patil
+# Digital-Resume-Azure: Sneha Patil
 ## Introduction:
 Cloud Resume is a multiple-step resume project where the main idea revolves around creating an online version of your resume in Azure to get a hands-on practice of the cloud services; that you can use in job interviews as a way to build and discuss your cloud skills. This project is inspired by the Cloud Resume Challenge introduced started by Forrest Brazeal in April 2020. The outcome is to create a 100% Azure-hosted version of your resume and build skills with Azure.
 The aim is to build digital cloud resume which can be handy, avoids confusion and saves time. This can be also be easily shared on our social medias which opens up for different opportunities. 
@@ -7,7 +7,7 @@ The aim is to build digital cloud resume which can be handy, avoids confusion an
 
 ![build](https://user-images.githubusercontent.com/77928409/147826398-e9f81b93-1855-4058-b112-2a6a202102d8.png)
 
-In this project, I’m going to build my own resume which would be integrated into GitHub and hosted on Microsoft Azure with Blob Storage, Azure Functions and CosmosDB. I will also create my own webpage with HTML and CSS and would develop a CI/CD workflow with GitHub. Finally, at the end would be deploying a static web app with a serverless database. The blob storage, holds my static website (my resume) for which I have used HTML, CSS and JavaScript. The JavaScript is used to implement a visitor counter. Not only will it be used to display that information, but also to call an API, which I have implemented with an Azure function. This Azure function interacts with Azure Cosmos DB, which is the database service used to store the website's visitor counter information. Also, I have used Azure CDN to enable features like HTTPS and custom domain support for my static site that is deployed on Azure blob storage. Finally, for all the CI/CD tooling, I have used GitHub.
+In this project, I’m have built my cloud resume which would be integrated into GitHub and hosted on Microsoft Azure with Blob Storage, Azure Functions and CosmosDB. The blob storage, holds my own static webpage (my resume) for which I have used HTML, CSS and JavaScript. The JavaScript is used to implement a visitor counter. Not only will it be used to display that information, but also to call an API, which I have implemented with an Azure function. This Azure function interacts with Azure Cosmos DB, which is the database service used to store the website's visitor counter information. Also, I have used Azure CDN to enable features like HTTPS and custom domain support for my static site that is deployed on Azure blob storage. Finally, at the end I have deployed a static web app with a serverless database. For all the CI/CD tooling, I have used GitHub.
 
 Azure Prerequisites:
 1)	Azure account: Used to deploy our website and our Azure functions.
