@@ -7,15 +7,15 @@ The aim is to build digital cloud resume which can be handy, avoids confusion an
 
 ![build](https://user-images.githubusercontent.com/77928409/147826398-e9f81b93-1855-4058-b112-2a6a202102d8.png)
 
- The blob storage, holds my static website, my resume, and in that website, we're going to be using HTML, CSS and JavaScript. The JavaScript is going to be used to implement a visitor counter. Not only will it be used to display that information, but also to call an API, which we're going to implement with an Azure function. This Azure function is going to interact with Azure Cosmos DB, which is the database service we'll be using to store our visitor counter info. We're going to be using Azure CDN to enable features like HTTPS and custom domain support for our static site that is deployed on Azure blob storage. Finally, for all our CI/CD tooling, we're going to be using GitHub.
+In this project, I’m going to build my own resume which would be integrated into GitHub and hosted on Microsoft Azure with Blob Storage, Azure Functions and CosmosDB. I will also create my own webpage with HTML and CSS and would develop a CI/CD workflow with GitHub. Finally, at the end would be deploying a static web app with a serverless database. The blob storage, holds my static website (my resume) for which I have used HTML, CSS and JavaScript. The JavaScript is used to implement a visitor counter. Not only will it be used to display that information, but also to call an API, which I have implemented with an Azure function. This Azure function interacts with Azure Cosmos DB, which is the database service used to store the website's visitor counter information. Also, I have used Azure CDN to enable features like HTTPS and custom domain support for my static site that is deployed on Azure blob storage. Finally, for all the CI/CD tooling, I have used GitHub.
 
 Azure Prerequisites:
-1)	 Azure account: Used to deploy our website and our Azure functions.
+1)	Azure account: Used to deploy our website and our Azure functions.
 2)	.NET Core 3.1 SDK: Cross platform, open source, framework used for Azure functions development.
-3)	 Azure functions core tools: Used to develop Azure functions locally on my own machine.
-4)	 Visual Studio Code: Used for both our front-end and back-end programming.
+3)	Azure functions core tools: Used to develop Azure functions locally on my own machine.
+4)	Visual Studio Code: Used for both our front-end and back-end programming.
 5)	Azure Cli: Used for a set of commands helpful to create and manage Azure resources.
-6)	 C# extension: Used for tools and support for programming in Cli.
+6)	C# extension: Used for tools and support for programming in Cli.
 
 
 ## Section 1:  Building the Frontend
