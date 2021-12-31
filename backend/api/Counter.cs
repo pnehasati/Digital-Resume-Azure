@@ -1,6 +1,5 @@
 using Newtonsoft.Json;
 
-//Counter
 namespace Company.Function{
     public class Counter
     {
