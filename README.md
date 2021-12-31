@@ -47,7 +47,7 @@ For updating the changes, I used commands as follows in Visual Studio (Git Bash 
  
  ![section2 2](https://user-images.githubusercontent.com/77928409/147826581-1dd41fe3-f8ed-4478-b13a-08613e692d7e.png)
 
-2)	Setting up my Azure Function:  I created Azure Functions inside of Visual Studio Code to interact with our Cosmos DB counter data. Functions has these things called bindings that allow us to connect other resources to our function. So, I connected the Azure Cosmos DB bindings to my newly created function, and then viewed my counter data via the function. (Function code is attached in the backend folder ->api-> Resume.cs)
+2)	Setting up my Azure Function:  I created Azure Functions inside of Visual Studio Code to interact with our Cosmos DB counter data. Functions has these things called bindings that allows to connect other resources to the function created. So, I connected the Azure Cosmos DB bindings to my newly created function, and then viewed my counter data via the function. (Function code is attached in the backend folder ->api-> Resume.cs)
     
     Steps to create Azure Function in VS Code:
 -	Downloaded Azure Functions extension
@@ -74,7 +74,7 @@ dotnet add package Microsoft.Azure.WebJobs.Extensions.CosmosDB --version 3.0.10
  
  ![section3 1](https://user-images.githubusercontent.com/77928409/147826653-349bf76c-e490-4b6b-a04d-c317206469d4.png)
  
-After this I also enabled the CORS setting on Azure portal to allow the user to use the wildcard.   
+After this I enabled the CORS setting on Azure portal to allow the user to use the wildcard.   
 
 ![section3 2](https://user-images.githubusercontent.com/77928409/147826684-08a1ccca-e700-4149-90a7-8ed84006faa6.png)
 
@@ -85,11 +85,11 @@ Steps to create Azure Blob Storage in VS Code:
 -	After getting deployed it popped up the website
 -	Added this website URL in CORS to enable the visitor counter on the website
  
-3)	Setup Azure CDN: I did setup my own domain from DNS provider. Further created the Azure CDN for HTTPS and custom domain support in the Azure Blob Storage. Finally visited my website via my own domain. I have used Azure CDN for a couple of things in my project. First, it's going to cache the content of my website and this is going to label low latencies to my website from anywhere in the world. Also, it can provision TLS SSL certificates for my website, which would enable HTTPS support. It also allows to map a custom domain for our site. 
+3)	Setup Azure CDN: I did setup my own domain from DNS provider. Further created the Azure CDN for HTTPS and custom domain support in the Azure Blob Storage. Finally visited my website via my own domain. I have used Azure CDN for a couple of things in my project. First, it's going to cache the content of my website and this is going to label low latencies to my website from anywhere in the world. Also, it can provision TLS SSL certificates for my website, which would enable HTTPS support. It also allows to map a custom domain for my site. 
 
 ![section3 3](https://user-images.githubusercontent.com/77928409/147826732-c256dcc5-0e73-4486-a07a-14ddbe7eecfb.png)
 
-After this is deployed, I again added this my domain URL in the CORS to enable the visitor counter on the website.
+After this is deployed, I again added my domain URL in the CORS to enable the visitor counter on the website.
 
 **Here I used the concept of caching and purging:**
 
@@ -104,7 +104,7 @@ After this is deployed, I again added this my domain URL in the CORS to enable t
  
  ![section4](https://user-images.githubusercontent.com/77928409/147826769-14f0e314-917a-4572-a419-24a3e871383c.png)
  
-CI/CD stands for continuous integration and continuous delivery. There are sort of four major areas here. So, Version Control, which in my case, I’m using git and GitHub to track and manage, changes to my code. Then there's Continuous Integration. So once my code is in, a version control, it'll go through a series of tests to validate the code. Then third is Continuous Delivery. Once it's passed those tests, it's placed in an area that it's ready to be pushed to production. Usually, people will have to manually go in and push the change to production. And the last optional step is the Continuous Deployment step, which once it reaches continuous delivery, it can automatically be pushed to production without anyone having to intervene and actually push a button there. 
+CI/CD stands for continuous integration and continuous delivery. There are sort of four major areas here. So, Version Control, which in my case, I’m using git and GitHub to track and manage, changes to my code. Then there's Continuous Integration. So once my code is in, a Version Control, it'll go through a series of tests to validate the code. Then third is Continuous Delivery. Once it's passed those tests, it's placed in an area that it's ready to be pushed to production. Usually, people will have to manually go in and push the change to production. And the last optional step is the Continuous Deployment step, which once it reaches continuous delivery, it can automatically be pushed to production without anyone having to intervene and actually push a button there. 
 Before I started with this, I updated all my changes on GitHub by using the git commands.
 
 1)	Create frontend workflow: I created this so that it makes it easy to make changes at the frontend in the future. GitHub workflow is responsible for deploying the frontend of my project. (above file- .github/workflows->frontend.main.yml) I created this ‘.github’ directory using Visual Studio Code. 
@@ -129,7 +129,7 @@ This provided some JSON and I copied all of that and pasted it in my GitHub Repo
 2)	Implement unit testing: I tested my Azure Functions code as part of its deployment workflow. (tests files are attacked above inside the backend folder)
 
 
-3)	Create backend workflow: I created this so that it makes it easy to make changes at the backend in the future. GitHub workflow is responsible for deploying the frontend of my project. (above file- .github/workflows->backend.main.yml) Then I wrote the code for the backend in workflows and updated it on my GitHub Repository. After that, it can be seen in the actions tab on my GitHub that the backend is deployed successfully (just as frontend). Whatever changes I would make at the backend later, would be updated directly in my backend files after this. (Right now, it is empty since I have not made any changes at the backend yet)
+3)	Create backend workflow: I created this so that it makes it easy to make changes at the backend in the future. GitHub workflow is responsible for deploying the backend of my project. (above file- .github/workflows->backend.main.yml) Then I wrote the code for the backend in workflows and updated it on my GitHub Repository. After that, it can be seen in the actions tab on my GitHub that the backend is deployed successfully (just as frontend). Whatever changes I would make at the backend later, would be updated directly in my backend files after this. (Right now, it is empty since I have not made any changes at the backend yet)
 
 ![section4 3](https://user-images.githubusercontent.com/77928409/147826869-5ab3ed0b-55f1-40dd-bb06-08ea1c76d116.png)
 
