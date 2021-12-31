@@ -1,4 +1,4 @@
-# Digital-Resume-Azure  -by Sneha Patil
+# Digital-Resume-Azure                                        -by Sneha Patil
 ## Introduction:
 Cloud Resume is a multiple-step resume project where the main idea revolves around creating an online version of your resume in Azure to get a hands-on practice of the cloud services; that you can use in job interviews as a way to build and discuss your cloud skills. This project is inspired by the Cloud Resume Challenge introduced started by Forrest Brazeal in April 2020. The outcome is to create a 100% Azure-hosted version of your resume and build skills with Azure.
 The aim is to build digital cloud resume which can be handy, avoids confusion and saves time. This can be also be easily shared on our social medias which opens up for different opportunities. 
@@ -134,5 +134,9 @@ This provided some JSON and I copied all of that and pasted it in my GitHub Repo
 ![section4 3](https://user-images.githubusercontent.com/77928409/147826869-5ab3ed0b-55f1-40dd-bb06-08ea1c76d116.png)
 
 ## Conclusion: 
-Thus, I successfully made my cloud resume using Azure. This helped me understand about the full-stack software development, version control, infrastructure as code, automation, continuous integration and delivery, cloud services and “serverless”, application security, and networking. Thank you.
+Thus, I successfully made my cloud resume using Azure. This helped me understand about the full-stack software development, version control, infrastructure as code, automation, continuous integration and delivery, cloud services and “serverless”, application security, and networking. 
+
+![fin](https://user-images.githubusercontent.com/77928409/147828372-e1020b0c-8244-48bc-8f8e-c87a7c6ed702.png)
+
+## Thank you.
 
