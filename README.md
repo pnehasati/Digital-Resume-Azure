@@ -31,6 +31,7 @@ Azure Prerequisites:
 
 3)	Test locally and push changes to GitHub: Test my website locally and then updated the changes on this GitHub Repository. 
 For updating the changes, I used commands as follows in Visual Studio (Git Bash Terminal) :
+//
  a)	git add -A
  b)	git commit -m “Update”
  c)	git push
