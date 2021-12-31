@@ -56,6 +56,8 @@ For updating the changes, I used commands as follows in Visual Studio (Git Bash 
  ![section2 3](https://user-images.githubusercontent.com/77928409/147826596-96f3f09a-5134-4cd1-87ea-0e468653069a.png)
  
 After this is done, I did run the command in my terminal: 
+
+
 -dotnet add package Microsoft.Azure.WebJobs.Extensions.CosmosDB --version 3.0.10 
 
 -	Then, updated local.settings.json file with Primary Connection String in my Azure Cosmos DB account.  (attached in the backend folder ->api-> local.settings.json)
@@ -88,10 +90,10 @@ Steps to create Azure Blob Storage in VS Code:
 ![section3 3](https://user-images.githubusercontent.com/77928409/147826732-c256dcc5-0e73-4486-a07a-14ddbe7eecfb.png)
 
 After this is deployed, I again added this my domain URL in the CORS to enable the visitor counter on the website.
-## Here I used the concept of caching and purging:
-i.	Caching is the process of storing copies of files in a cache, or temporary storage location, so that they can be accessed more quickly.
-ii.	Purging is the process of removing cached content before the predetermined expiry date.
-iii.	Purge as part of my CI/CD is a good practice as visitors get most up-to-date assets.
+**Here I used the concept of caching and purging:**
+  i.	Caching is the process of storing copies of files in a cache, or temporary storage location, so that they can be accessed more quickly. 
+  ii.	Purging is the process of removing cached content before the predetermined expiry date. 
+  iii.	Purge as part of my CI/CD is a good practice as visitors get most up-to-date assets. 
  
  
  ## Section 4: Building CI/CD Pipeline
