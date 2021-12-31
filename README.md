@@ -5,7 +5,7 @@ The aim is to build digital cloud resume which can be handy, avoids confusion an
 
 ## What have I built?
 
-![](images/OutputImages/build.png)
+  ![](images/OutputImages/build.png 100*20)
 
  The blob storage, holds my static website, my resume, and in that website, we're going to be using HTML, CSS and JavaScript. The JavaScript is going to be used to implement a visitor counter. Not only will it be used to display that information, but also to call an API, which we're going to implement with an Azure function. This Azure function is going to interact with Azure Cosmos DB, which is the database service we'll be using to store our visitor counter info. We're going to be using Azure CDN to enable features like HTTPS and custom domain support for our static site that is deployed on Azure blob storage. Finally, for all our CI/CD tooling, we're going to be using GitHub.
 
